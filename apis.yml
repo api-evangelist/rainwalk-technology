@@ -1,8 +1,18 @@
 aid: rainwalk-technology
 name: Rainwalk Technology
-description: Rainwalk Technology is a company surfaced as a portfolio company of techstars and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Rainwalk Technology is a white-label, embedded pet insurance provider founded
+  in 2018 and based in Columbia, South Carolina. Rainwalk lets partners such as
+  shelters, breeders, veterinary practices, and consumer platforms launch and
+  distribute accident-and-illness pet insurance directly at the point of sale
+  through its APIs and hosted quoting/enrollment flows, keeping partners in
+  control of the customer experience. Coverage includes accidents, illnesses,
+  diagnostics, surgery, and medications, with hassle-free reimbursements and free
+  virtual vet consultations. The company operates a partner/embedded API surface
+  (api.rainwalk.io) plus hosted quoting, insured, and agent portals, and is backed
+  by Techstars Ventures, ManchesterStory, Insurtech Gateway, Bridge Capital, and
+  Seaplane Ventures. Rainwalk was added to the API Evangelist network as a
+  Techstars portfolio company and enriched via the pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/rainwalk-technology/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,43 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://rainwalkpetinsurance.com/wp-content/uploads/2023/02/cropped-favicon-32x32.png
 tags:
 - Company
-apis: []
+- Insurance
+- Pet Insurance
+- Embedded Insurance
+- Insurtech
+- White Label
+- Partner API
+apis:
+- name: Rainwalk Embedded Pet Insurance API
+  description: >-
+    Rainwalk's white-label / embedded pet insurance API, used by partners to embed
+    quoting, enrollment, and policy management directly into their own websites and
+    point-of-sale systems. The API is a private partner surface (access via the
+    Rainwalk partner program); no public OpenAPI specification or developer
+    documentation is published. A public breed-search endpoint is exposed at
+    api.rainwalk.io/insured/breed/search/.
+  humanURL: https://rainwalkpetinsurance.com/partner/
+  baseURL: https://api.rainwalk.io/
+  properties:
+  - type: Website
+    url: https://rainwalkpetinsurance.com/partner/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +65,24 @@ maintainers:
 common:
 - type: Website
   url: https://rainwalkpetinsurance.com/
+- type: DeveloperPortal
+  url: https://rainwalkpetinsurance.com/partner/
+- type: SignUp
+  url: https://quoting.rainwalk.io/
+- type: Login
+  url: https://insured.rainwalk.io/
+- type: Support
+  url: mailto:help@rainwalk.io
+- type: Blog
+  url: https://rainwalkpetinsurance.com/blog/
+- type: TermsOfService
+  url: https://rainwalkpetinsurance.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://rainwalkpetinsurance.com/privacy-policy/
+- type: DomainSecurity
+  url: security/rainwalk-technology-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
